@@ -10,4 +10,4 @@ class ma_classe2():
         print("Construction de la classe ma_classe2")
 
 
-ma_classe2().ma_fonction()
+ma_classe2.ma_fonction()
