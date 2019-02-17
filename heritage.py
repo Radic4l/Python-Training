@@ -1,0 +1,11 @@
+class Employer():
+    def __init__(self):
+        self.salaireHoraire = 20
+
+class Ingenieur(Employer):
+    def __init__(self, prenom):
+        Employer.__init__(self)
+        self.prenom = prenom
+
+julie = Ingenieur('Julie')
+print(julie.prenom + " Possede comme salaire de " + str(julie.salaireHoraire) + " Euros de l'heure")
