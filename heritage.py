@@ -8,4 +8,4 @@ class Ingenieur(Employer):
         self.prenom = prenom
 
 julie = Ingenieur('Julie')
-print(julie.prenom + " Possede comme salaire de " + str(julie.salaireHoraire) + " Euros de l'heure")
+print(julie.prenom + " Possede un salaire de " + str(julie.salaireHoraire) + " Euros de l'heure")
