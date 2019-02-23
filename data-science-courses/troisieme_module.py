@@ -40,3 +40,12 @@ for row in rows:
     final_data.append(splited_row)
 
 print(final_data[:5])
+
+# 11 Creer une nouvelle liste departements_list qui contient tout les noms des departements de final_data
+
+departements_list = []
+for row in final_data:
+    departement = row[0]
+    departements_list.append(departement)
+
+print(departements_list)
