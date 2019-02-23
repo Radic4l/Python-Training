@@ -17,4 +17,12 @@ read_data = data.read()
 # 6 afficher les 5 premiers elements de rows
 
 rows = read_data.split('\n')
-print(rows[:5])
+#print(rows[:5])
+
+# 7 Soit la variable ten_rows contenant les 10 premiers elements de la liste rows
+# 8 Ecrire une boucle qui pour chaque elements de ten_rows applique la fonction print()
+
+ten_rows = rows[:10]
+
+for row in ten_rows:
+    print(row)
