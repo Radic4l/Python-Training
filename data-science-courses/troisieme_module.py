@@ -24,5 +24,19 @@ rows = read_data.split('\n')
 
 ten_rows = rows[:10]
 
-for row in ten_rows:
-    print(row)
+#for row in ten_rows:
+    #print(row)
+
+# 9 Creer une liste vide final_data
+# 10 Ecrire une boucle for qui
+## 10.1 delimite les elements de la liste rows
+## 10.2 ajoute chaque element a la liste final_data
+# Afficher les 5 premiers elements de la liste final_data
+
+final_data = []
+
+for row in rows:
+    splited_row = row.split(',')
+    final_data.append(splited_row)
+
+print(final_data[:5])
