@@ -12,4 +12,4 @@
  
 * Cours udemy : Cours complet Python pour débutant: bases de Python de A à Z sur des cas concrets de manipulation de data (Data Science)
 * Url         : https://www.udemy.com/python-datascience/
-* Progress    :
+* Progress    : 25%

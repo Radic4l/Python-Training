@@ -47,8 +47,18 @@ for row in names_data:
     numerical_list.append(temp_list)
 
 print(numerical_list)
-
+print(len(numerical_list))
 # Enonce
 ## Creer une liste vide final_list
 ## Ecrire une boucle qui conserve seulement les prenoms partagés par au moins 1000 personnes
 ## Afficher les 10 premiers elements de final_list
+
+final_list = []
+for line in numerical_list:
+    name = line[0]
+    people = line[1]
+    if people >= 1000:
+        final_list.append(name)
+
+print(final_list[:10])
+print(len(final_list))
