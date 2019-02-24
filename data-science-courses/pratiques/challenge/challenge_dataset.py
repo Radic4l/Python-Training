@@ -22,4 +22,19 @@ file = open("../../sources/unisex-names.csv", "r")
 # simplification au lieu de split names dans names_liste je le fais directement à la lecture
 names_list = file.read().split('\n')
 
-print(names_list[:10])
+#print(names_list[:10])
+
+# Enonce
+## Creer une liste vide names_data
+## Ecrire une boucle qui convertit notre liste en liste de listes
+
+names_data = []
+for row in names_list:
+    value = row.split(',')
+    names_data.append(value)
+
+print(names_data)
+
+# Enonce
+## Creer une nouvelle liste numerical_list
+## Ecrire une boucle qui convertit les 'nombres' en nombres decimaux
