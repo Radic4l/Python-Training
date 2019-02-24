@@ -67,3 +67,16 @@ if int_habitants[0] > 600000:
         both_conditions = True
 
 print(both_conditions)
+
+# Creer une nouvelle liste million_list qui contient seulement les nombres superieurs à un millions d'habitants de la liste int_habitants. Pour cela. vous avez besoin d'une boucle for et d'une condition if.
+# 14 la boucle for permet de parcourir la liste int_habitants.
+# 15 la condition if selectionne seulement ceux qui on plus d'un millions d'habitants.
+# ajouter ces elements a million_list et l'afficher.
+
+million_list = []
+
+for nb in int_habitants:
+    if nb > 1000000:
+        million_list.append(nb)
+
+print(million_list)
