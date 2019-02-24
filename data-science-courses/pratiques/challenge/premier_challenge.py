@@ -1,6 +1,6 @@
 # Ouvrir de nouveau le fichiers departements-fr.csv puis creer une liste d'entiers contenant le nombre d'habitants de tout les departements français.
 
-data = open("sources/departements-fr.csv")
+data = open("sources/departements-fr.csv",'r')
 print(data)
 
 read_data = data.read()
