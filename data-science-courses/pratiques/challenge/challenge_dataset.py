@@ -55,10 +55,8 @@ print(len(numerical_list))
 
 final_list = []
 for line in numerical_list:
-    name = line[0]
-    people = line[1]
-    if people >= 1000:
-        final_list.append(name)
+    if line[1] >= 1000:
+        final_list.append(line[0])
 
 print(final_list[:10])
 print(len(final_list))
