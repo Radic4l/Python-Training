@@ -1,5 +1,5 @@
 # preparation
-file = open("sources/departements-fr.csv","r")
+file = open("../sources/departements-fr.csv","r")
 read_file = file.read()
 
 # mise en forme

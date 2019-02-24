@@ -7,7 +7,7 @@
 # 4 afficher les 3 resultats
 
 
-file = open("sources/departements-fr.csv","r")
+file = open("../../sources/departements-fr.csv","r")
 print(file)
 
 data = file.read()

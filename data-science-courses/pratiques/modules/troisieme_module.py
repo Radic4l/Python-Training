@@ -5,7 +5,7 @@
 # 3 Afficher le resultat
 
 # j'ouvre mon fichier en mode read et je l'assigne à ma variable data
-data = open("sources/departements-fr.csv","r")
+data = open("../../sources/departements-fr.csv","r")
 print(data)
 
 # je lis mon fichier data

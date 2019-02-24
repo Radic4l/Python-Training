@@ -1,5 +1,5 @@
 #open() ouvrir un fichier 'r' mode read
-file = open('sources/mon_texte.txt','r')
+file = open('../sources/mon_texte.txt','r')
 print(file)
 
 # lis le contenu du fichier
