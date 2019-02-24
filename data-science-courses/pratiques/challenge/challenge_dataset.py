@@ -33,8 +33,22 @@ for row in names_list:
     value = row.split(',')
     names_data.append(value)
 
-print(names_data)
+#print(names_data)
 
 # Enonce
 ## Creer une nouvelle liste numerical_list
 ## Ecrire une boucle qui convertit les 'nombres' en nombres decimaux
+
+numerical_list = []
+for row in names_data:
+    name = row[0]
+    count = float(row[1])
+    temp_list = [name,count]
+    numerical_list.append(temp_list)
+
+print(numerical_list)
+
+# Enonce
+## Creer une liste vide final_list
+## Ecrire une boucle qui conserve seulement les prenoms partagés par au moins 1000 personnes
+## Afficher les 10 premiers elements de final_list
