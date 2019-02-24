@@ -45,3 +45,25 @@ first_last_int = (int_habitants[0] >= int_habitants[-1])
 print(first_500000)
 print(first_650000)
 print(first_last_int)
+
+# determiner si le 6e element de la liste departement est egale a "Ardèche".
+# 9 soit une variable result egale a 0 par defaut et a 1 si la condition est vraie.
+# 10 afficher la variable result
+
+
+result = 0
+if departements[5] == "Ardèche":
+    result = 1
+
+print(result)
+
+# Ecrire un morceau de code qui teste 2 conditions
+# 11 une premiere condition qui teste si le premier element de int_habitants est superieur a 600000 habitants.
+# 12 une seconde qui teste que le second element de int_habitants est superieure a 300000 habitants.
+# 13 si les 2 elements sont vrais assigner True a la variable both_conditions ( variable initialement egale a False)
+both_conditions = False
+if int_habitants[0] > 600000:
+    if int_habitants[1] > 300000:
+        both_conditions = True
+
+print(both_conditions)
