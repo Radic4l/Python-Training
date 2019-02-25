@@ -31,3 +31,33 @@ matt_found = 'Matt' in dic_students
 print(john_found)
 print(matt_found)
 print(dic_students)
+
+# La condition if / else
+
+# le if
+temperature = 30
+
+if temperature > 40:
+    print('il fait chaud !')
+if temperature <= 40:
+    print('Il fait froid !')
+
+# le if else: solution beaucoup plus souple que deux if
+if temperature > 40:
+    print('Il fait chaud !')
+else:
+    print('Il fait froid !')
+
+temperatures = [50,18,39,78,12,40]
+
+hight_temperatures =[]
+low_temperatures = []
+
+for temp in temperatures:
+    if temp > 40:
+        hight_temperatures.append(temp)
+    else:
+        low_temperatures.append(temp)
+
+print(hight_temperatures)
+print(low_temperatures)
