@@ -61,3 +61,16 @@ for temp in temperatures:
 
 print(hight_temperatures)
 print(low_temperatures)
+
+# Compter les elements d'une liste et presenter le resultat dans cun dictionnaire
+
+fruits = ["Citron", "Banane", "Pomme", "Pomme", "Pomme","Banane"]
+
+fruits_counts = {}
+
+for item in fruits:
+    if item in fruits_counts:
+        fruits_counts[item] = fruits_counts[item] + 1
+    else:
+        fruits_counts[item] = 1
+print(fruits_counts)
