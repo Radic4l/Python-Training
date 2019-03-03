@@ -37,11 +37,9 @@ new_texte_string = texte_string.replace(",","").replace(".","").replace("'","").
 ## Afficher cleaned_text
 
 def clean_text(value):
-    cleaned_value = value.replace(".","")
-    cleaned_value = value.replace(",","")
-    cleaned_value = value.replace("'","")
-    cleaned_value = value.replace("\n","")
+    cleaned_value = value.replace(".","").replace(",","").replace("'","").replace("\n","").lower()
     return(cleaned_value)
 
 cleaned_text = clean_text(texte_string)
-print(clean_text)
+print(cleaned_text)
+
