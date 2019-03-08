@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Url cible
-url = 'http://localhost/mediawiki/index.php'
+url = 'http://www.katoombagroup.org/details.php?id=56'
 balises = ['h1','h2','h3','h4','h5','h6','div','button','span','a','ul','li','input','form']
 
 # Configurations du dictionnaire de proxy
@@ -51,8 +51,41 @@ def get_class(parameters):
             print('\nLes classes des balises {0} sont :'.format(params))
             print(list_class)
 
+def get_values(parameters):
+    for params in parameters:
+        list_values = []
+        for param in soup.find_all(params):
+            value = param.get('value')
+            if value != None:
+                list_values.append(value)
+            else:
+                pass
+        if len(list_values) == 0:
+            pass
+        else:
+            print('\nLes Values des balises {0} sont :'.format(params))
+            print(list_values)
+
+def get_types(parameters):
+    for params in parameters:
+        list_types = []
+        for param in soup.find_all(params):
+            type = param.get('type')
+            if type != None:
+                list_types.append(type)
+            else:
+                pass
+        if len(list_types) == 0:
+            pass
+        else:
+            print('\nLes Types des balises {0} sont :'.format(params))
+            print(list_types)
 
 print('\n--------------------------------IDs-------------------------------------\n')
 get_id(balises)
 print('\n------------------------------CLASSES-----------------------------------\n')
 get_class(balises)
+print('\n-------------------------------VALUES-----------------------------------\n')
+get_values(balises)
+print('\n--------------------------------Types-----------------------------------\n')
+get_types(balises)
