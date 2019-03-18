@@ -3,21 +3,23 @@ from bs4 import BeautifulSoup
 import requests
 
 # Url cible
-url = 'http://www.katoombagroup.org/details.php?id=56'
+url = ''
 balises = ['h1','h2','h3','h4','h5','h6','div','button','span','a','ul','li','input','form']
 
 # Configurations du dictionnaire de proxy
-http_proxy = 'http://'
-https_proxy = 'https://'
-ftp_proxy = 'ftp://'
+http_proxy = ''
+https_proxy = ''
+ftp_proxy = ''
 proxyDict = {'http': http_proxy, 'https': https_proxy, 'ftp': ftp_proxy}
 
-reponse = requests.get(url) # Ajouter proxies=proxyDict en second parametre si besoins
+reponse = requests.get(url, proxies=proxyDict) # Ajouter proxies=proxyDict en second parametre si besoins
 content = reponse.content
 # print(content)
 
 parser = BeautifulSoup(content, 'html.parser')
 soup = parser.body
+datas_text = 'D:/utilisateurs/adujardin/Documents/Python-Training/web-scraping/datas.txt'
+f = open(datas_text, 'w')
 # print(body.prettify())
 # print(body)
 
@@ -35,6 +37,7 @@ def get_id(parameters):
         else:
             print('\nLes IDs des balises {0} sont :'.format(params))
             print(list_id)
+            # f.write('ID list \n{0}'.format(list_id))
 
 def get_class(parameters):
     for params in parameters:
@@ -50,6 +53,7 @@ def get_class(parameters):
         else:
             print('\nLes classes des balises {0} sont :'.format(params))
             print(list_class)
+            # f.write('Class list \n{0}'.format(list_class))
 
 def get_values(parameters):
     for params in parameters:
@@ -65,6 +69,7 @@ def get_values(parameters):
         else:
             print('\nLes Values des balises {0} sont :'.format(params))
             print(list_values)
+            # f.write('Value list \n{0}'.format(list_values))
 
 def get_types(parameters):
     for params in parameters:
@@ -80,6 +85,7 @@ def get_types(parameters):
         else:
             print('\nLes Types des balises {0} sont :'.format(params))
             print(list_types)
+            # f.write('Types list \n{0}'.format(list_types))
 
 print('\n--------------------------------IDs-------------------------------------\n')
 get_id(balises)
