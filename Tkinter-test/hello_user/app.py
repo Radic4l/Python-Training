@@ -16,7 +16,9 @@ current_user = getpass.getuser()
 
 # personalisation de la fenetre
 root.title('Radical App')
+# root.geometry("720x480")
 root.geometry("720x480")
+
 root.wm_minsize(480, 360)
 root.wm_maxsize(720, 480)
 root.iconbitmap("src/logo.ico")

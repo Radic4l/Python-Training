@@ -6,7 +6,7 @@ weather_data = []
 file = open("../sources/madrid-weather-2016.csv")
 
 data = file.read().split('\n')
-
+print(data)
 for row in data[1:len(data)]:
     values = row.split(',')
     weather_data.append(values)

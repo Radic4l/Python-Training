@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Url cible
-url = ''
+url = 'https://steamcommunity.com/sharedfiles/filedetails/?id=1720160210'
 balises = ['h1','h2','h3','h4','h5','h6','div','button','span','a','ul','li','input','form']
 
 # Configurations du dictionnaire de proxy
@@ -18,8 +18,8 @@ content = reponse.content
 
 parser = BeautifulSoup(content, 'html.parser')
 soup = parser.body
-datas_text = 'D:/utilisateurs/adujardin/Documents/Python-Training/web-scraping/datas.txt'
-f = open(datas_text, 'w')
+# datas_text = 'D:/utilisateurs/adujardin/Documents/Python-Training/web-scraping/datas.txt'
+# f = open(datas_text, 'w')
 # print(body.prettify())
 # print(body)
 
